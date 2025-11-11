@@ -9,16 +9,21 @@ public class finallybruh {
         int num = sc.nextInt();
         int even = 0;
         int odd = 0;
+        int sum1=0 , sum2=0;
         for (int i = 0; i < num; i++) {
             System.out.println("Enter number: ");
             int number = sc.nextInt();
             if (number % 2 == 0) {
                 even++;
-            }else
+                sum1 += number;
+            }else{
                 odd++;
+                sum2 += number;
+            }
+
 
         }
-        System.out.println("You entered " + even +" even number");
-        System.out.println("You entered " + odd +" odd number");
+        System.out.println("You entered " + even +" even number with the sum of " + sum1);
+        System.out.println("You entered " + odd +" odd number with the sum of " + sum2);
     }
 }
